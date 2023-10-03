@@ -4,6 +4,9 @@ const { chats } = require('./data/data');
 const connectDB = require('./config/db');
 
 const app = express();
+
+app.use(express.json()) // To accept json data
+
 dotenv.config();
 
 connectDB();
